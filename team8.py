@@ -1,3 +1,4 @@
+import random
 ####
 # Each team's file must define four tokens:
 #     team_name: a string
@@ -8,9 +9,23 @@
 
 team_name = 'The name the team gives to itself' # Only 10 chars displayed.
 strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+strategy_description = 'How does this strategy decide? '
+def placeholder(my_history, their_history, my_score, their_score, betraypercent, real_result ):
+    if their_history[-10: -1]:
+        def move(my_history, their_history, my_score, their_score):
+         if 'bbbbb' in their_history[-100:-10]:
+             betraypercent = -60
+        if 'ccccc' in my_history[-100:-10]:
+             betraypercent = -40
+        if betraypercent < -50:
+               their_history = random.choice['b','b','b','b','c']
+        else:
+               my_history = random.choice['b','b','c','c','c']
+    if my_score > -140 and their_history[-10] == 'b':
+      return 'b'
+    elif my_score > -140 and their_history[-10] == 'c':
+          return 'c' 
     
-def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
@@ -27,36 +42,25 @@ def move(my_history, their_history, my_score, their_score):
     # Decide whether to return 'c' or 'b'.
     
     return 'c'
-
     
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
     from this module. Prints error if return value != result.
-    Returns True or False, dpending on whether result was as expected.
-    '''
-    real_result = move(my_history, their_history, my_score, their_score)
-    if real_result == result:
-        return True
-    else:
-        print("move(" +
-            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
-                       str(my_score), str(their_score)])+
-            ") returned " + "'" + real_result + "'" +
-            " and should have returned '" + result + "'")
-        return False
-
-if __name__ == '__main__':
+    Returns True or False, depending on whether result was as expected.'''
+    
+    real_result = test_move (my_history, their_history, my_score, their_score, result)             
+ 
      
     # Test 1: Betray on first move.
     if test_move(my_history='',
               their_history='', 
               my_score=0,
               their_score=0,
-              result='b'):
+              result ='b'):
          print 'Test passed'
      # Test 2: Continue betraying if they collude despite being betrayed.
-    test_move(my_history='bbb',
-              their_history='ccc', 
+    test_move(my_history='bbbbb',
+              their_history='bbbbb', 
               # Note the scores are for testing move().
               # The history and scores don't need to match unless
               # that is relevant to the test of move(). Here,
@@ -65,4 +69,6 @@ if __name__ == '__main__':
               # move('bbb', 'ccc', 0, 0) returns 'b'.
               my_score=0, 
               their_score=0,
-              result='b')             
+              result='b') 
+              
+    
