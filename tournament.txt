@@ -10,16 +10,16 @@ Section 1 - Player vs. Player
 --------------------------------------------------------------------------------
 Each column shows pts/round earned against each other player:
              P0     P1
-vs. P0 :      0   -497
-vs. P1 :     97      0
-TOTAL  :     97   -497
+vs. P0 :      0   -493
+vs. P1 :     95      0
+TOTAL  :     95   -493
 --------------------------------------------------------------------------------
 Section 2 - Leaderboard
 --------------------------------------------------------------------------------
 Average points per round:
 Team name (P#):  Score      with strategy name
-FCBarcelon(P0):         48 points with The name the team gives to this strategy
-The name t(P1):       -249 points with The name the team gives to this strategy
+FCBarcelon(P0):         47 points with The name the team gives to this strategy
+The name t(P1):       -247 points with The name the team gives to this strategy
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 team7--------------------------------------------------------------------------------
@@ -174,30 +174,24 @@ if __name__ == '__main__':
               result='b')             --------------------------------------------------------------------------------
 Section 3 - Game Data for Team FCBarcelona
 --------------------------------------------------------------------------------
-97 pt/round: FCBarcelona(P0) "The name the team gives to this strategy"
--497 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
+95 pt/round: FCBarcelona(P0) "The name the team gives to this strategy"
+-493 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
 C BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 C cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-ccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 Section 3 - Game Data for Team The name the team gives to itself
 --------------------------------------------------------------------------------
--497 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
-97 pt/round: FCBarcelona(P0) "The name the team gives to this strategy"
+-493 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
+95 pt/round: FCBarcelona(P0) "The name the team gives to this strategy"
 C cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 C BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-ccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
