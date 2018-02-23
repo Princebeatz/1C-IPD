@@ -30,8 +30,8 @@ def move(my_history, their_history, my_score, their_score):
     if len(my_history)>1 and len(their_history)>1:
         collude_counter = 0
         while collude_counter < 2:
-            return 'c'
-        return 'b'
+            return 'b'
+        return 'c'
      
 
     
