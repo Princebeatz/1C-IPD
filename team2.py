@@ -27,25 +27,25 @@ def move(my_history, their_history, my_score, their_score):
     # Decide whether to return 'c' or 'b'.
     
     if len(my_history)==0 and len(their_history)==0:
- +       return 'b'
- +    if len(my_history)>0 and len(their_history)>0:
- +        betrayPROB = 0
- +        colludePROB = 0
- +        betrayPER=0.0
- +        colludePER=0.0
- +        for i in their_history:
- +            if i == 'c':
- +                colludePROB += 1
- +            if i == 'b':
- +                betrayPROB += 1
- +        betrayPER = (betrayPROB / len(their_history)) * 100
- +        colludePER = (colludePROB / len(their_history)) * 100
- +        if betrayPER > colludePER:
- +            return'b'
- +        if colludePER > betrayPER:
- +            return'c'
- +        if betrayPER == colludePER:
- +            return'b'
+        return 'b'
+     if len(my_history)>0 and len(their_history)>0:
+         betrayPROB = 0
+         colludePROB = 0
+         betrayPER=0.0
+         colludePER=0.0
+         for i in their_history:
+             if i == 'c':
+                 colludePROB += 1
+             if i == 'b':
+                 betrayPROB += 1
+         betrayPER = (betrayPROB / len(their_history)) * 100
+         colludePER = (colludePROB / len(their_history)) * 100
+         if betrayPER > colludePER:
+             return'b'
+         if colludePER > betrayPER:
+             return'c'
+         if betrayPER == colludePER:
+             return'b'
 
     
 def test_move(my_history, their_history, my_score, their_score, result):
