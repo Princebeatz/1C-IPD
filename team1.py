@@ -18,7 +18,6 @@ def move(my_history, their_history, my_score, their_score):
     Make my move.
     Returns 'c' or 'b'. 
     '''
-            then[CCCCBbbbcccC]
     if 'b' in their_history[-10:]:
         return 'b'
     elif random.random()<0.1:
